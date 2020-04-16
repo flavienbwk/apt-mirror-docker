@@ -9,10 +9,11 @@ services:
             - "./mirror:/var/spool/apt-mirror"
 
     server:
-        image: nginx:1.17.10-alpine
+        build:
+            context: .
+            dockerfile: nginx.Dockerfile
         command: [nginx-debug, '-g', 'daemon off;']
         volumes:
-            - "./mirror:/mirror:ro"
-            - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+            - "./mirror/mirror:/mirror:ro"
         ports:
             - "8080:80"
