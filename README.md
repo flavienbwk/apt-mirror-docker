@@ -20,6 +20,8 @@ This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [l
     docker-compose up mirror
     ```
 
+> This repository is shipped with the Ubuntu 18.04 default `mirror.list`
+
 ## Serving
 
 1. Check your mirroring succeeded checking `./mirror/mirror/*`
