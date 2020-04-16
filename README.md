@@ -21,7 +21,7 @@ This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [l
     docker-compose up mirror
     ```
 
-> This repository is shipped with the Ubuntu 18.04 default `mirror.list`
+> This repository is shipped with the Ubuntu 18.04 default `mirror.list` (expect ~137G to be downloaded)
 
 ## Serving
 
