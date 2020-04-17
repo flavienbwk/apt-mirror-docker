@@ -4,7 +4,7 @@ services:
 
     mirror:
         build: .
-        command: apt-mirror
+        command: bash -c "apt-mirror && bash /apt-mirror/postmirror.sh"
         volumes:
             - "./mirror:/var/spool/apt-mirror"
 
