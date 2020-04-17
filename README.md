@@ -1,8 +1,8 @@
 # apt-mirror-docker
 
 <p align="center">
-    <a href="https://travis-ci.org/flavienbwk/apt-mirror-docker.svg?branch=master" target="_blank">
-        <img src="https://travis-ci.org/flavienbwk/apt-mirror-docker.svg?branch=master"/>
+    <a href="https://travis-ci.com/flavienbwk/apt-mirror-docker.svg?branch=master" target="_blank">
+        <img src="https://travis-ci.com/flavienbwk/apt-mirror-docker.svg?branch=master"/>
     </a>
 </p>
 <p align="center">Updated and portable apt-mirror script including the most recent pull requests, containerized for mirroring + serving</p>
