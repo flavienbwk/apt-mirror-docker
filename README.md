@@ -25,7 +25,9 @@ This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [l
 
 ## Serving
 
-1. Check your mirroring succeeded checking `./mirror/mirror/*`
+1. Check your mirroring succeeded in `./mirror/mirror/*` or typing `du -sh ./mirror`
+
+    _If this directory is at least 120G, you can consider it worked._
 
 2. Run the server :
 
