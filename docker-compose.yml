@@ -12,6 +12,7 @@ services:
         build:
             context: .
             dockerfile: nginx.Dockerfile
+        restart: always
         command: [nginx-debug, '-g', 'daemon off;']
         volumes:
             - "./mirror/mirror:/mirror:ro"
