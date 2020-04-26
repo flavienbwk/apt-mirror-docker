@@ -1068,9 +1068,10 @@ my $size_output = format_bytes($need_bytes);
 (my $size_mirror) = $size_output =~ /\A([^:\s]+)/;
 my $directory = get_variable("mirror_path");
 my $command = "df $directory | awk -F'[^0-9]*' 'NR==2 {print \$5}'";
-(my $directory_size) = format_bytes(`$command`*1000) =~ /\A([^:\s]+)/;
+my $directory_bytes = `$command`*1000;
+(my $directory_size) = format_bytes($directory_bytes) =~ /\A([^:\s]+)/;
 
-if ($directory_size <= $size_mirror) {
+if ($directory_bytes <= $need_bytes) {
 	warn("apt-mirror: need space $size_output\n");
 }
 else 
