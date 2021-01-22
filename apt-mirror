@@ -1057,6 +1057,14 @@ close FILES_SHA256;
 
 chdir get_variable("mirror_path") or die("apt-mirror: can't chdir to mirror");
 
+print "Following files will be downloaded into archive :\n";
+my $k;
+my $v;
+while ( ($k,$v) = each %urls_to_download ) {
+        my $bytes_human = format_bytes($v);
+        print "$k => $bytes_human\n";
+}
+
 my $need_bytes = 0;
 foreach ( values %urls_to_download )
 {
@@ -1067,7 +1075,7 @@ my $size_output = format_bytes($need_bytes);
 
 (my $size_mirror) = $size_output =~ /\A([^:\s]+)/;
 my $directory = get_variable("mirror_path");
-my $command = "df $directory | awk -F'[^0-9]*' 'NR==2 {print \$5}'";
+my $command = "df --output=avail $directory | awk -F '[^0-9]*' 'NR==2 {print}'";
 my $directory_bytes = `$command`*1000;
 (my $directory_size) = format_bytes($directory_bytes) =~ /\A([^:\s]+)/;
 
