@@ -5,10 +5,11 @@
         <img src="https://travis-ci.com/flavienbwk/apt-mirror-docker.svg?branch=master"/>
     </a>
 </p>
-<p align="center">Updated and portable apt-mirror script including the most recent pull requests, containerized for mirroring + serving</p>
-<p align="center">Status : tested & working :heavy_check_mark:</p>
+<p align="center">Up to date apt-mirror script, containerized for mirroring + serving.</p>
 
 This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [liedekef's](https://github.com/liedekef/apt-mirror) updates from the (sadly) unmaintained [apt-mirror repository](https://github.com/apt-mirror/apt-mirror)
+
+<p align="center">Status : tested & working :heavy_check_mark:</p>
 
 ## To know
 
