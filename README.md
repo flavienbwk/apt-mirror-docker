@@ -13,7 +13,7 @@ This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [l
 
 ## To know
 
-The Ubuntu archive mirror may **[update every 6 hours](https://wiki.ubuntu.com/Mirrors)** (4 times a day, timezone depending on mirror's location). To avoid a bad sync, launch sync of your mirror ~15 minutes after midnight, 6am, noon or 6pm (consider mirror's timezone).
+An Ubuntu archive mirror may **[update every 6 hours](https://wiki.ubuntu.com/Mirrors)** (4 times a day, timezone depending on mirror's location). To avoid a bad sync, launch sync of your mirror ~15 minutes after midnight, 6am, noon or 6pm (consider mirror's timezone).
 
 That is to say your download time shoudln't exceed 6 hours to be safe : that's why I recommended using [a cloud provider](https://scaleway.com) for download and then retrieve it with `rsync` for example.
 
