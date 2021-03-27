@@ -10,6 +10,12 @@
 
 This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [liedekef's](https://github.com/liedekef/apt-mirror) updates from the (sadly) unmaintained [apt-mirror repository](https://github.com/apt-mirror/apt-mirror)
 
+## To know
+
+The Ubuntu archive mirror may **[update every 6 hours](https://wiki.ubuntu.com/Mirrors)** (4 times a day, timezone depending on mirror's location). To avoid a bad sync, launch sync of your mirror ~15 minutes after midnight, 6am, noon or 6pm (consider mirror's timezone).
+
+That is to say your download time shoudln't exceed 6 hours to be safe : that's why I recommended using [a cloud provider](https://scaleway.com) for download and then retrieve it with `rsync` for example.
+
 ## Downloading & updating
 
 1. Edit the `mirror.list` file at your convenience
@@ -21,13 +27,13 @@ This repository merges [geosone's](https://github.com/geosone/apt-mirror) and [l
     docker-compose up mirror
     ```
 
-> This repository is shipped with the Ubuntu 18.04 default `mirror.list` (expect ~137G to be downloaded)
+> This repository is shipped with the Ubuntu 18.04 default `mirror.list` (expect ~179G to be downloaded)
 
 ## Serving
 
 1. Check your mirroring succeeded in `./mirror/mirror/*` or typing `du -sh ./mirror`
 
-    _If this directory is at least 120G, you can consider it worked._
+    _If this directory is ~179G, you can consider it worked._
 
 2. Run the server :
 
