@@ -28,13 +28,13 @@ That is to say your download time shoudln't exceed 6 hours to be safe : that's w
     docker-compose up mirror
     ```
 
-> This repository is shipped with the Ubuntu 18.04 default `mirror.list` (expect ~179G to be downloaded)
+> This repository is shipped with the Ubuntu 18.04 default `mirror.list` (expect ~210Gb to be downloaded)
 
 ## Serving
 
 1. Check your mirroring succeeded in `./mirror/mirror/*` or typing `du -sh ./mirror`
 
-    _If this directory is ~179G, you can consider it worked._
+    You are expected to download around **210 Gb** of files at the time of writing.
 
 2. Run the server :
 
