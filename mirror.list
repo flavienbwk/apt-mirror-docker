@@ -5,7 +5,7 @@ set var_path          $base_path/var
 set postmirror_script $var_path/postmirror.sh
 set defaultarch       amd64
 set run_postmirror    0
-set nthreads          20
+set nthreads          6
 set limit_rate        100m
 set _tilde            0
 # Use --unlink with wget (for use with hardlinked directories)
@@ -19,5 +19,12 @@ deb http://archive.ubuntu.com/ubuntu bionic main restricted universe multiverse
 deb http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
 deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
 deb http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
-
 clean http://archive.ubuntu.com/ubuntu
+
+# ==
+# Example of other repos
+# ==
+
+# deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+# deb https://download.docker.com/linux/ubuntu bionic stable
+# deb https://apt.kubernetes.io kubernetes-bionic main
