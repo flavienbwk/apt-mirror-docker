@@ -7,4 +7,4 @@ bash /var/spool/apt-mirror/var/clean.sh
 #rsync -rcvv --stats --times --existing rsync://fr.archive.ubuntu.com/ubuntu/dists/ /var/spool/apt-mirror/mirror/archive.ubuntu.com/ubuntu/dists/
 
 # Clean 0B files
-find "/var/spool/apt-mirror/mirror/archive.ubuntu.com/ubuntu/dists" -size 0 -exec rm -f {} \;
+find "/var/spool/apt-mirror/mirror/" -size 0 -exec rm -f {} \;
