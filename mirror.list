@@ -45,8 +45,11 @@ deb [arch=armhf] https://mirror.i3d.net/debian bookworm main contrib non-free no
 deb [arch=armhf] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
 
 deb https://mirror.i3d.net/debian bullseye main contrib non-free
+deb https://mirror.i3d.net/debian bullseye-updates main contrib non-free
 deb [arch=arm64] https://mirror.i3d.net/debian bullseye main contrib non-free
+deb [arch=arm64] https://mirror.i3d.net/debian bullseye-updates main contrib non-free
 deb [arch=armhf] https://mirror.i3d.net/debian bullseye main contrib non-free
+deb [arch=armhf] https://mirror.i3d.net/debian bullseye-updates main contrib non-free
 
 clean  https://mirror.i3d.net/debian
 
