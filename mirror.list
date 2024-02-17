@@ -29,17 +29,30 @@ deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy universe
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates universe
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-backports main restricted universe multiverse
 
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy multiverse
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy-updates multiverse
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy main restricted
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy universe
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy-updates universe
+deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy-backports main restricted universe multiverse
+
+
 clean http://ports.ubuntu.com/ubuntu-ports
 
 deb https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
 deb https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
 deb [arch=arm64] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
 deb [arch=arm64] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+deb [arch=armhf] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
+deb [arch=armhf] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+
+
 
 clean  https://mirror.i3d.net/debian
 
 deb https://pkgs.tailscale.com/stable/ubuntu jammy main
 deb [arch=arm64] http://archive.raspberrypi.com/debian bookworm main
+deb [arch=armhf] http://archive.raspberrypi.com/debian bookworm main
 
 
 # ==
