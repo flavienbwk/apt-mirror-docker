@@ -22,14 +22,14 @@ deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy universe
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates universe
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
 
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy multiverse
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates multiverse
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy main restricted
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy universe
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates universe
-deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates multiverse
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy main restricted
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy universe
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates universe
+deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-backports main restricted universe multiverse
 
-clean http://ftp.halifax.rwth-aachen.de/ubuntu
+clean http://ports.ubuntu.com/ubuntu-ports
 
 deb https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
 deb https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
