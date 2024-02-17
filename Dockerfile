@@ -3,7 +3,7 @@
 FROM debian:buster-slim
 
 RUN apt update
-RUN apt install gcc make perl wget rsync --no-install-recommends -y
+RUN apt install gcc make perl wget rsync xz-utils --no-install-recommends -y
 
 WORKDIR /apt-mirror
 COPY ./apt-mirror /apt-mirror
