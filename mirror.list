@@ -15,31 +15,31 @@ set http_proxy        127.0.0.1:3128
 set proxy_user        user
 set proxy_password    password
 
-deb http://de.archive.ubuntu.com/ubuntu/ jammy multiverse
-deb http://de.archive.ubuntu.com/ubuntu/ jammy-updates multiverse
-deb http://de.archive.ubuntu.com/ubuntu/ jammy main restricted
-deb http://de.archive.ubuntu.com/ubuntu/ jammy universe
-deb http://de.archive.ubuntu.com/ubuntu/ jammy-updates universe
-deb http://de.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy multiverse
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates multiverse
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy main restricted
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy universe
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates universe
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
 
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy multiverse
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy-updates multiverse
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy main restricted
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy universe
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy-updates universe
-deb [arch=aarch64] http://de.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy multiverse
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates multiverse
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy main restricted
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy universe
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates universe
+deb [arch=arm64] http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
 
-clean http://de.archive.ubuntu.com/ubuntu
+clean http://ftp.halifax.rwth-aachen.de/ubuntu
 
 deb https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
 deb https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
-deb [arch=aarch64] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
-deb [arch=aarch64] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+deb [arch=arm64] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
+deb [arch=arm64] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
 
 clean  https://mirror.i3d.net/debian
 
 deb https://pkgs.tailscale.com/stable/ubuntu jammy main
-deb [arch=aarch64] http://archive.raspberrypi.com/debian/ bookworm main
+deb [arch=arm64] http://archive.raspberrypi.com/debian bookworm main
 
 
 # ==
@@ -48,6 +48,6 @@ deb [arch=aarch64] http://archive.raspberrypi.com/debian/ bookworm main
 
 # deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
  deb https://download.docker.com/linux/ubuntu jammy stable
- deb [arch=aarch64] https://download.docker.com/linux/ubuntu jammy stable
+ deb [arch=arm64] https://download.docker.com/linux/ubuntu jammy stable
 
 # deb https://apt.kubernetes.io kubernetes-bionic main
