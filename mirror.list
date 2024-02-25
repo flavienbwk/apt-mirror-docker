@@ -15,12 +15,11 @@ set http_proxy        127.0.0.1:3128
 set proxy_user        user
 set proxy_password    password
 
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy multiverse
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates multiverse
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy main restricted
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy universe
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates universe
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy           main restricted universe multivers
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates   main restricted universe multiverse
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-security  main restricted universe multiverse
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
+clean http://ftp.halifax.rwth-aachen.de/ubuntu
 
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy multiverse
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates multiverse

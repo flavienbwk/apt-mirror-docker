@@ -4,9 +4,9 @@ services:
 
     mirror:
         build: .
-        command: bash -c "apt-mirror && bash /apt-mirror/postmirror.sh"
+        command: bash -c "/apt-mirror/apt-mirror && bash /apt-mirror/postmirror.sh"
         volumes:
-            - "/did/debian-mirror/mirror:/var/spool/apt-mirror"
+            - "/did/mirror/mirror:/var/spool/apt-mirror"
 
     server:
         build:
@@ -15,6 +15,6 @@ services:
         restart: always
         command: [nginx-debug, '-g', 'daemon off;']
         volumes:
-            - "/did/debian-mirror/mirror/mirror:/mirror:ro"
+            - "/did/mirror/mirror/mirror:/mirror:ro"
         ports:
             - "8080:80"

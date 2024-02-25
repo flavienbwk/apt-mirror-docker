@@ -1,9 +1,9 @@
 # Building apt-mirror from sources
 
-FROM debian:buster-slim
+FROM debian:stable-slim
 
 RUN apt update
-RUN apt install gcc make perl wget rsync xz-utils --no-install-recommends -y
+RUN apt install bzip2 gcc make perl wget rsync xz-utils --no-install-recommends -y
 
 WORKDIR /apt-mirror
 COPY ./apt-mirror /apt-mirror
