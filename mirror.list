@@ -15,7 +15,7 @@ set http_proxy        127.0.0.1:3128
 set proxy_user        user
 set proxy_password    password
 
-deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy           main restricted universe multivers
+deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy           main restricted universe multiverse
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-updates   main restricted universe multiverse
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-security  main restricted universe multiverse
 deb http://ftp.halifax.rwth-aachen.de/ubuntu jammy-backports main restricted universe multiverse
@@ -36,23 +36,23 @@ deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy-updates universe
 deb [arch=armhf] http://ports.ubuntu.com/ubuntu-ports jammy-backports main restricted universe multiverse
 clean http://ports.ubuntu.com/ubuntu-ports
 
-deb https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
-deb https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
-deb [arch=arm64] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
-deb [arch=arm64] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
-deb [arch=armhf] https://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
-deb [arch=armhf] https://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+deb http://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
+deb http://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+deb [arch=arm64] http://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
+deb [arch=arm64] http://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
+deb [arch=armhf] http://mirror.i3d.net/debian bookworm main contrib non-free non-free-firmware
+deb [arch=armhf] http://mirror.i3d.net/debian bookworm-updates main contrib non-free non-free-firmware
 
-deb https://mirror.i3d.net/debian bullseye main contrib non-free
-deb https://mirror.i3d.net/debian bullseye-updates main contrib non-free
-deb [arch=arm64] https://mirror.i3d.net/debian bullseye main contrib non-free
-deb [arch=arm64] https://mirror.i3d.net/debian bullseye-updates main contrib non-free
-deb [arch=armhf] https://mirror.i3d.net/debian bullseye main contrib non-free
-deb [arch=armhf] https://mirror.i3d.net/debian bullseye-updates main contrib non-free
+deb http://mirror.i3d.net/debian bullseye main contrib non-free
+deb http://mirror.i3d.net/debian bullseye-updates main contrib non-free
+deb [arch=arm64] http://mirror.i3d.net/debian bullseye main contrib non-free
+deb [arch=arm64] http://mirror.i3d.net/debian bullseye-updates main contrib non-free
+deb [arch=armhf] http://mirror.i3d.net/debian bullseye main contrib non-free
+deb [arch=armhf] http://mirror.i3d.net/debian bullseye-updates main contrib non-free
 
-clean  https://mirror.i3d.net/debian
+clean  http://mirror.i3d.net/debian
 
-deb https://pkgs.tailscale.com/stable/ubuntu jammy main
+#deb http://pkgs.tailscale.com/stable/ubuntu jammy main
 deb [arch=arm64] http://archive.raspberrypi.com/debian bookworm main
 deb [arch=armhf] http://archive.raspberrypi.com/debian bookworm main
 deb [arch=arm64] http://archive.raspberrypi.com/debian bullseye main
@@ -65,7 +65,7 @@ deb [arch=armhf] http://archive.raspberrypi.com/debian bullseye main
 # ==
 
 # deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
- deb https://download.docker.com/linux/ubuntu jammy stable
- deb [arch=arm64] https://download.docker.com/linux/ubuntu jammy stable
+# deb http://download.docker.com/linux/ubuntu jammy stable
+# deb [arch=arm64] http://download.docker.com/linux/ubuntu jammy stable
 
-# deb https://apt.kubernetes.io kubernetes-bionic main
+# deb http://apt.kubernetes.io kubernetes-bionic main
